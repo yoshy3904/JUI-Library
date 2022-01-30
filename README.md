@@ -4,7 +4,7 @@ Furthermore it provides quite a few utility functions as well as classes for han
 
 # Building the source code
 
-This is not that difficult since the library includes only 3 .cpp files with their respective header files. A working SFML build has to be provided.
+This is not that difficult since the library includes only 3 .cpp files with their respective header files. A working SFML build has to be provided. The following shows a possible CMakeLists.txt file, which is also included in the repository.
 
 ```html
 cmake_minimum_required(VERSION 3.15.2)
