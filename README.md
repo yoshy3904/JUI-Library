@@ -23,6 +23,7 @@ target_link_libraries(JUI PUBLIC sfml-graphics)
 target_include_directories(JUI PUBLIC "include/")
 ```
 # Example
+This code generates a simple application with a button that can be pressed.
 
 ```html
 #include <iostream>
@@ -58,3 +59,4 @@ int main()
     }
 }
 ```
+
