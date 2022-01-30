@@ -15,7 +15,7 @@ add_library(${PROJECT_NAME} STATIC src/JUI.cpp src/Resources.cpp src/Utils.cpp)
 
 # Define the libraries to be used.
 set(SFML_STATIC_LIBRARIES TRUE)
-set(SFML_DIR <Location of SFML build here>)
+set(SFML_DIR <SFML build directory here>)
 find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
 target_link_libraries(JUI PUBLIC sfml-graphics)
 
