@@ -22,3 +22,39 @@ target_link_libraries(JUI PUBLIC sfml-graphics)
 # Set directories
 target_include_directories(JUI PUBLIC "include/")
 ```
+# Example
+
+```html
+#include <iostream>
+
+#include "JUI.hpp"
+#include "Utils.hpp"
+#include "Resources.hpp"
+
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(1200, 900), "JUI works");
+
+    jui::Fonts::load("Arial", "arial.ttf");
+
+    jui::Canvas canvas(window);
+
+    jui::Button button(canvas, jui::Fonts::get("Arial"));
+
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+            canvas.updateAllEvents(event);
+        }
+
+        window.clear();
+        canvas.drawAll();
+        canvas.updateAllLogic();
+        window.display();
+    }
+}
+```
