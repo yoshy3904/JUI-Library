@@ -4,10 +4,10 @@ Furthermore it provides quite a few utility functions as well as classes for han
 
 # How to use
 
-Just include these 2 files into your project and include the header into your project. When compiling the executable you also have to provide a working SFML build. 
+Since the library is pretty small, just include these 2 files into your project and include the header into your project. When compiling the executable you also have to provide a working SFML build. 
 
 # Example
-This code generates a simple application with a button that can be pressed. 
+This code generates a simple application that showcases what the library is capable of. 
 
 ```html
 #include "jui.hpp"
